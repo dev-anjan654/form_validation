@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn Screen with Form Validation</title>
+    <!--font awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    
+    <!--css file-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+       <form action="" onsubmit="return validation()">
+         <h5>LOGIN</h5>
+         <!--input for username-->
+         <div class="input-controll">
+            <div class="username">
+             <div class="icon">
+               <i class="fa-regular fa-user"></i> 
+             </div>
+             <input type="text" placeholder="Username" id="username">  
+            </div>
+            <p class="error" id="user-error"></p>  
+         </div>
+         <!--input for password-->
+         <div class="input-controll">
+            <div class="password">
+              <div class="icon">
+               <i class="fa-solid fa-key"></i>
+              </div> 
+              <input type="password" placeholder="Password" id="password"> 
+            </div>
+            <p class="error" id="password-error"></p>
+         </div>
+         <p><a href="#">Forgot Password?</a></p>
+         <!--login button-->
+         <div class="login-btn">
+            <button type="submit">LOGIN</button>
+         </div>
+       </form> 
+    </div>
+ <!--javascript file--> 
+ <script src="script.js"></script>   
+</body>
+</html>

@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff; 
+}
+.container{
+    position: relative;
+    height: 100vh;
+    background-image: url('https://picsum.photos/id/307/1920/1080');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(37, 37, 37, 0.56);
+}
+form{
+    position: relative;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.562);
+    padding: 50px;
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+}
+form h5{
+    font-size: 22px;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+.input-controll{
+    margin-bottom: 20px;
+}
+form input{
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 250px;
+    height: 40px;
+}
+.username, .password{
+    display: flex;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    background-color: lightseagreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+form p a{
+    text-decoration: none;
+    color: #fff;
+}
+.login-btn{
+    display: flex;
+    justify-content: center;
+}
+.login-btn button{
+    width: 180px;
+    padding: 8px 35px;
+    background-color: lightseagreen;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    letter-spacing: 3px;
+}
+
+/**Error Section**/
+.input-controll .error{
+    text-align: left;
+    color: #e46161;
+    font-size: 14px;
+    height: 15px;
+    padding: 5px 0;
+}
